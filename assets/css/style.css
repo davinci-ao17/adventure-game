@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: arial;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.intrologo {
+  display: none;
+  text-align: center;
+  margin-top: 6%;
+  color: white;
+  user-select: none;
+  opacity: 0;
+}
+
+.gamename {
+  color: white;
+  text-align: center;
+  font-size: 250%;
+  margin-top: 15%;
+  opacity: 0;
+  display: none;
+  user-select: none;
+}
+
+#mainMenu {
+  text-align: center;
+  margin-top: 10%;
+  display: none;
+  opacity: 0;
+  user-select: none;
+}
+
+#mainMenu button {
+  margin-bottom: 8px;
+  padding: 20px;
+  width: 200px;
+  outline: none;
+  background-color: rgba(50, 50, 50, 0.5);
+  border: 2px solid gray;
+  color: white;
+  font-size: 130%;
+  font-family: courier;
+}
+
+#creditsTab {
+  display: none;
+}
+
+.infoTab {
+  padding: 10px 50px 10px 50px;
+  background-color: gray;
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+  display: none;
+  margin-top: 10%;
+}
+
+#mainMenu h1 {
+  font-size: 350%;
+  color: white;
+}
+
+.warningTab {
+  padding: 10px 50px 10px 50px;
+  background-color: gray;
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  display: none;
+  margin-top: 10%;
+}
+
+button.closeTab {
+  background-color: rgba(50, 50, 50, 0.5);
+  border: 2px solid gray;
+  font-weight: bold;
+  width: 30px;
+  height: 25px;
+  font-size: 110%;
+  outline: none;
+  user-select: none;
+  margin: 0 auto;
+}
+
+#storyTexts {
+  background-color: white;
+  font-size: 110%;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid gray;
+  display: none;
+  border-radius: 5px;
+  position: relative;
+  top: 10px;
+  z-index: -1;
+}
+
+button.nextButton {
+  background-color: gray;
+  border: 2px solid darkgray;
+  border-radius: 50%;
+  padding: 8px;
+  width: 30px;
+  height: 30px;
+  line-height: 5px;
+  font-weight: bold;
+  font-size: 110%;
+  z-index: 1;
+  float: right;
+  margin: -25px 10px 0px 0px;
+  display: none;
+}
+
+#storyContainer {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.nextButton:after {
+  content: ">";
+}
+
+/* Shrink */
+.hvr-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-shrink:hover, .hvr-shrink:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+/* End Shrink */
