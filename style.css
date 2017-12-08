@@ -1,0 +1,363 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+body{
+    background-color: black;
+    padding:0;
+    margin:0;
+    user-select: none;
+}
+
+h1{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#view1{
+    position: absolute;
+    padding:0;
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.backgroundImg{
+    position: absolute;
+    padding:0;
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    display: none;
+}
+
+#view2{
+    position: absolute;
+    padding:0;
+    margin:0;
+    bottom: 15px;
+    right: 15px;
+    transition: linear 0.5s;
+}
+
+.message{
+    position: absolute;
+    bottom: 110px;
+    left: 30px;
+    color: black;
+    background-color: lightcyan;
+    border-radius: 0% 10px 10px 10px;
+    padding: 5px;
+    margin: 5px;
+    width: 235px;
+    max-width: 225px;
+    transition: linear 0.1s;
+}
+
+.message p{
+    padding:0;
+    margin:0;
+    margin-top: -20px;
+    line-height: 25px;
+    text-align: left;
+    text-indent: 10px;
+}
+
+.message-you{
+    position: absolute;
+    bottom: 110px;
+    right: 30px;
+    color: black;
+    background-color: lightyellow;
+    border-radius: 10px 0% 10px 10px;
+    padding: 5px;
+    margin: 5px;
+    width: 235px;
+    max-width: 225px;
+    transition: linear 0.1s;
+}
+
+.message-you p{
+    padding:0;
+    margin:0;
+    margin-top: -20px;
+    line-height: 25px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.message-pointer:before{
+    content: ' ';
+    border: 2px solid black;
+    width: 0;
+    height: 0;
+    position: relative;
+    left: -26px;
+    right: auto;
+    top: 17px;
+    bottom: auto;
+    border: 22px solid;
+    border-color: lightcyan transparent transparent transparent;
+}
+
+.message-pointer-you:before{
+    content: ' ';
+    border: 2px solid black;
+    width: 0;
+    height: 0;
+    position: relative;
+    left: auto;
+    right: -207px;
+    top: 17px;
+    bottom: auto;
+    border: 22px solid;
+    border-color: lightyellow transparent transparent transparent;
+}
+
+#phone{
+    position: relative;
+    background-image: url(Mobile_Blank.png);
+    height: 650px;
+    width: 329px;
+    padding:0;
+    margin:0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: drop-shadow(15px 15px 15px #222);
+    filter: drop-shadow(15px 15px 15px #222); 
+}
+
+#screen{
+    position: absolute;
+    left: 15px;
+    right: 17px;
+    top: 52px;
+    bottom: 71px;
+    background-color: grey;
+}
+
+#mobile-top{
+    position: absolute;
+    top:0;
+    left: 0;
+    right:0;
+    height: 30px;
+    background-color: black;
+    color: white;
+    text-align: right;
+}
+
+#mobile-center{
+    position: absolute;
+    top:30px;
+    left: 0;
+    right:0;
+    bottom: 0;
+    color: white;
+    overflow: hidden;
+}
+
+#mobile-bottom{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right:0;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+#icons{
+    padding: 0;
+    margin: 0;
+    line-height: 65px;
+    text-align: center;
+    word-spacing: 50px;
+}
+
+#homeBtn{
+    background-color: darkblue;
+    border: 4px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#mobile-top i{
+    line-height: 0px;
+    margin-right: 5px;
+}
+
+#mobile-top p{
+    line-height: 0px;
+}
+
+#device-info{
+    margin-right: 10px;
+}
+
+.button{
+    margin: 0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    width: 500px;
+    height: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 3em;
+    transition: linear 2s ease;
+    box-shadow: 0 0 1px transparent;
+    transform: perspective(1px) translateZ(0);
+    -webkit-transform: perspective(1px) translateZ(0);
+}
+
+.button:hover{
+    letter-spacing: 1px;
+    border: 3px solid white;
+}
+
+#buttonLocation{
+    padding:0;
+    margin:0;
+    display: table;
+    margin: 0 auto;
+    margin-top: 80vh;
+}
+
+#horizontal-list {
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+}
+#horizontal-list li {
+    display: inline-block;
+    float: none;
+}
+
+#chat-header{
+    position: absolute;
+    height: 50px;
+    top:0;
+    left:0;
+    right:0;
+    background-color: floralwhite;
+    color: black;
+    z-index: 1;
+}
+
+#chat-header i:first-child{
+    float: left;
+    line-height: 50px;
+    margin-right: 10px;
+}
+
+#chat-header h1{
+    color: black;
+    line-height: 50px;
+    padding: 0;
+    margin: 0;
+    margin-right: 25px;
+    text-align: center;
+}
+
+#chat-typebox{
+    position: absolute;
+    border-radius: 25px;
+    height: 50px;
+    bottom: 55px;
+    left:5px;
+    right:5px;
+    background-color: white;
+    color: grey;
+}
+
+#hintText{
+    text-align: center;
+    color: white;
+}
+
+#chat-typebox i{
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#chat-typebox p{
+    float: left;
+    margin-left: 30px;
+    line-height: 15px;
+    font-size: 1.1em;
+    width: 169px;
+    color: black;
+}
+
+#menu{
+    display: none;
+    max-width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 15%;
+}
+
+#howToPlay{
+    display: none;
+    max-width: 410px;
+    height: 300px;
+    margin: auto;
+    margin-top: 15%;
+    color: white;
+}
+
+#deathScreenVideo{
+    position: fixed;
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    z-index: -1;
+}
+
+#deathScreen{
+    position: fixed;
+    right: 0; 
+    bottom: 0;
+    left: 0;
+    top: 0;
+    z-index: 11;
+}
+
+#winScreen{
+    position: fixed;
+    display: none;
+    right: 0; 
+    bottom: 0;
+    left: 0;
+    top: 0;
+    z-index: 13;
+    animation: 15s credits linear;
+    color: white;
+    text-align: center;
+}
+
+@keyframes credits {
+    0% { top:  100%; }
+  100% { top: -200%; }
+}
+
+#deathScreen h1{
+    text-align: center;
+    color: darkred;
+    font-size: 100px;
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+}
+
+#deathScreen p{
+    font-size: 20px;
+    color: darkred;
+    text-align: center;
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+}

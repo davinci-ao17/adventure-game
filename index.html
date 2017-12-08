@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+        <main>
+            <section id="view1">
+                <img class="backgroundImg" alt="img" id="img1" src="Images/WakingUp/1.PNG" />
+                <img class="backgroundImg" alt="img" id="img2" src="Images/WakingUp/2.PNG" />
+                <img class="backgroundImg" alt="img" id="img3" src="Images/WakingUp/3.PNG" />
+                <img class="backgroundImg" alt="img" id="view1Img" src="Images/WakingUp/4.PNG" />
+                <div id="menu">
+                    <h1>Redeem</h1>
+                    <button class="button" onclick="LoadPhoneScene();">Play</button>
+                    <button class="button" onclick="HowToPlay();">How To Play</button>
+                    <button class="button" onclick="loadLastScene();">last Scene</button>
+                    <button class="button" onclick="death();">Game Over Scene</button>
+                    <button class="button" onclick="win();">Win Scene</button>
+                </div>
+                <div id="howToPlay">
+                    <h1>How To Play</h1>
+                    <p>Use [SpaceBar] to type, use mouse to select your options</p>
+                    <button class="button" onclick="HowToPlay();">Back</button>
+                </div>
+                <div id="buttonLocation">
+                    <p id="hintText"></p>
+                    <ul id="horizontal-list">
+                        <li><button class="button" id="useBtn" onclick="hasPhone = true;">USE</button></li>
+                        <li><button class="button" id="phoneBtn" onclick="showPhone();">PHONE</button></li>
+                        <li><button class="button" id="bonusBtn" onclick="">bonus</button></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="view2" style="display: none;">
+                <div id="phone">
+                    <div id="screen">
+                        <div id="mobile-top">
+                            <p id="device-info">
+                                <i class="fa fa-bluetooth-b" aria-hidden="true"></i><i class="fa fa-volume-down" aria-hidden="true"></i>
+                                <i class="fa fa-wifi" aria-hidden="true"></i><i class="fa fa-signal" aria-hidden="true"></i>
+                                <i class="fa fa-battery-three-quarters" aria-hidden="true"></i>
+                                <span id="mobileTime">02:34</span>
+                            </p>
+                        </div>
+                        <div id="mobile-center">
+                            <div id="chat-header">
+                                <i class="fa fa-long-arrow-left fa-3x" aria-hidden="true"></i>
+                                <h1 id="girlName">naam</h1>
+                            </div>
+                            <div id="chat-holder"></div>
+                            <div id="chat-typebox">
+                                <p id="typeBox">Type a message...</p>
+                                <i class="fa fa-paper-plane fa-2x" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div id="mobile-bottom">
+                            <p id="icons">
+                                <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+                                <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                                <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="deathScreen">
+                <video id="deathScreenVideo" autoplay loop>
+                    <source src="facepalm.mp4" type="video/mp4">
+                </video>
+                <h1>GAME OVER</h1>
+                <p id="deathMessage"></p>
+            </div>
+            <div id="winScreen">
+                <h1>Redeem</h1>
+                <h2>The End</h2>
+                <h5>Thanks for playing</h5>
+                <br />
+                <h2>Created by:</h2>
+                <h3>Kelvin Wijkniet</h3>
+                <br />
+                <h2>Art by:</h2>
+                <h3>Kelvin Wijkniet</h3>
+            </div>
+        </main>
+        <script src="custom.js"></script>
+	</body>
+</html>
