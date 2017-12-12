@@ -1,0 +1,89 @@
+//TEXT ADVENTURE STORY//
+
+BY BRANDON VAN ZANTEN - RADIOACTIVE STUDIOS - 2017
+
+MAIN MENU w/ Start Game, How to play and Credits.
+
+You are (CUSTOM NAME). You are an experienced survivalist. You are heading to North Dakota to investigate why people have gone missing. This region is marked as "point of no return". Nobody made it out there alive, but you are willing to take the risk. Will you succeed? or will you meet your end.
+
+Scene 1a: Airplane B55 - You are almost at the drop zone. Make sure you got everything you need.
+	<>1: Go to the cockpit. (go to scene 1b)
+	<>2: Jump out of the plane. (if status paracute = true)
+	<>3: Stay in your seat and don't go. (go to scene credits)
+
+Scene 1b: Cockpit of Airplane B55 - Take what you need..you'll need it.
+	<>1: Take bottle of water (status: waterbottle = true)
+	<>2: Take flaregun (status: flaregun = true)
+	<>3: Take parachute (status: parachute = true)
+	<>4: Go back (go to scene 1a)
+
+Scene 2: Skies - You see two possible landing spots. For which one are you going for?
+	<>1: Mountain (go to scene 2gameo)
+	<>2: Lake (go to scene 3)
+
+Scene 2gameo: Mountain - When you tried to land you slipped and fell of the mountain to your death. GAME OVER.
+
+Scene 3: Lake - You've landed safely, but you're wet. What are you going to do?
+	<>1: Take off your clothes and let it dry. (go to scene 4a)
+	<>2: Keep your clothes on (go to scene 4b)
+
+Scene 4a: Lake - After 45 minutes your clothes have dried up. In those 45 minutes you saw a shack and a cave. You don't have the time for both. Which one are you going to investigate?
+	<>1: Shack Entrance (go to scene 5aa)
+	<>2: Cave Entrance (go to scene 5ab)
+
+Scene 5a: Lake - After 45 minutes you explored a little bit of the region, but you are cold. In those 45 minutes you saw a shack and a cave. You don't have the time for both. Which one are you going to investigate?
+	<>1: Shack Entrance (go to scene 5ba)
+	<>2: Cave Entrance (go to scene 5bb)
+
+Scene 5aa - Shack Entrance - You are at the Shack. It looks like someone lives in there. What are you going to do?
+	<>1: Go inside (go to scene 5gameo1)
+	<>2: Leave (go to scene 6b)
+
+Scene 5ab - Cave Entrance - You are at the Cave. You hear eerie noises inside the cave. What are you going to do?
+	<>1: Go inside (go to scene 5gameo2)
+	<>2: Leave (go to scene 6b)
+
+Scene 5ba - Shack Entrance - You are at the Shack. It looks like someone lives in there. What are you going to do?
+	<>1: Go inside (go to scene 6a)
+	<>2: Leave (go to scene 5gameo3)
+
+Scene 5bb - Cave Entrance - You are at the Cave. You hear eerie noises inside the cave. What are you going to do?
+	<>1: Go inside (go to scene 5gameo2)
+	<>2: Leave (go to scene 5gameo4)
+
+Scene 5gameo1 - You got inside the owner of the shack was shocked with your presence. He shot you in the head. GAME OVER.
+Scene 5gameo2 - You walked in the cave and realise something wasn't right. You got a poison arrow in your knee. GAME OVER.
+Scene 5gameo3 - You walked away from the shack and was freezing. You died of the cold. GAME OVER.
+Scene 5gameo4 - You walked away from the cave and was freezing. You died of the cold. GAME OVER.
+
+Scene 6a - Shack - The man saw that you are cold he helped you with new clothes and gave you some soup. He told that he is the reason why people go missing or dying. He gave you information you needed! (status: bestend = true)
+	<>1: RUN!! (go to scene 6b)
+
+Scene 6b - Riverside - You ran as far as you could. Now you are thirsty and need some water fast!
+	<>1: Drink nothing (go to scene 6gameo)
+	<>2: Drink bottle of water (if status: waterbottle = true) (go to scene 7)
+
+Scene 6gameo - After walking for 2 hours in the hope for clean water. You fainted and got lost. GAME OVER.
+
+Scene 7 - Woods - You see a helicopter and a landing pad. What are you going to do?
+	<>1: Scream for help (go to scene 7gameo)
+	<>2: Shoot flaregun (go to scene 8)
+
+Scene 7gameo - You alerted a pack of hungry wolves. GAME OVER
+
+Scene 8 - Landing Pad - You are at the landing pad with the helicopter waiting for you. They want the password in order to take you with them. What is the password?
+	<>1: G12 (go to scene 8gameo)
+	<>2: B55 (go to scene 9)
+	<>3: H99 (go to scene 8gameo)
+
+Scene 8gameo - You gave the incorrect password and they left you behind. GAME OVER
+
+Scene 9 - Landing Pad - You gave the correct password and they took you with them.
+	<>1: Yay! (go to scene end) (if status: bestend = true  go to scene bestend)
+
+Scene End - You are the first person that made it out alive, but you still don't know how people are gone missing. Atleast you live to tell the tale...
+
+Scene Bestend - You are the first person that made it out alive and you know why people have gone missing. It was the old man at the shack. You are going to report him at the police office and make sure he sits behind the bars...
+
+
+CREDITS

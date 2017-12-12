@@ -1,0 +1,4 @@
+title.innerHTML
+link1.setAttribute("onclick", "woods()")  - ga je naar volg. scene
+link2.style.display = "none";  -  onzichtbaar maken
+link2.style.display = "inline"; - zichtbaar maken
