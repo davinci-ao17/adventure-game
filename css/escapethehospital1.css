@@ -1,0 +1,336 @@
+body {
+  background-color: black;
+}
+
+h1 {
+	color: darkgrey;
+	text-align: center;
+}
+
+#home {
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	display: inline;
+	position: absolute;
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#audio1 {
+	color: grey;
+	display: inline;
+	position: absolute;
+	z-index: 1;
+	margin-top: 100px;
+	margin-left: 520px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#afbeelding1 {
+	margin-left: 500px;
+	display: none;
+	height: 635px;
+	width: 960px;
+	position: absolute;
+}
+
+#foobar { 
+	display: none 
+}
+
+#audio2 {
+	color: grey;
+	display: inline;
+	position: absolute;
+	z-index: 1;
+	margin-top: 150px;
+	margin-left: 520px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#titles {
+	color: darkgrey;
+	text-align: center;
+	position: absolute;
+}
+
+#desc {
+	color: darkgrey;
+	margin-left: 100px;
+	margin-top: 200px;
+	position: absolute;
+}
+
+#afbeelding2 {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+#afbeelding3 {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+#afbeelding4 {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+#afbeelding5 {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+#afbeelding5d {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+#afbeelding6 {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+#afbeelding6d {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+#noKey {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+#noKeyd {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+#noD {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+#ingang1 {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+#voorkant1 {
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+#deur1 {
+	width: 33px;
+	height: 70px;
+	position: absolute;
+	margin-top: 354px;
+	margin-left: 780px;
+	z-index: 1;
+}
+
+#schuur {
+	color: grey;
+	display:none;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+#dopper {
+	display: none;
+	height: 120px;
+	width: 40px;
+	position: absolute;
+	margin-top: 240px;
+	margin-left: 570px;
+	z-index: 1;
+}
+
+#key {
+	display: none;
+	height: 20px;
+	width: 40px;
+	position: absolute;
+	margin-top: 240px;
+	margin-left: 670px;
+	z-index: 1;
+}
+
+#mapbed {
+	display: none;
+}
+
+#mapstorage {
+	display: none;
+}
+
+#mapcorridor {
+	display: none;
+}
+
+#mapreceptionh {
+	display: none;
+}
+
+#mapreception {
+	display: none;
+}
+
+#mapreceptionwithk {
+	display: none;
+}
+
+#mapreceptionnok {
+	display: none;
+}
+
+#mapreceptionnod {
+	display: none;
+}
+
+#mapreceptiond {
+	display: none;
+}
+
+#mapreceptionwithkd {
+	display: none;
+}
+
+#mapreceptionnokd {
+	display: none;
+}
+
+#mapingang {
+	display: none;
+}
+
+#mapvoorkant {
+	display: inline;
+}
+
+#mapschuur {
+	display: none;
+}
+
+#dubbeleladder1 {
+	position: absolute;
+	margin-left: 480px;
+	margin-top: 270px;
+	z-index: 1;
+    height: 200px;
+    width: 200px;
+    display: none;
+}
+
+#raam1 {
+	position: absolute;
+	margin-left: 545px;
+	margin-top: 215px;
+	z-index: 1;
+}

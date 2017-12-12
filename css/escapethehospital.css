@@ -1,0 +1,387 @@
+body {
+  background-color: black;
+}
+
+h1 {
+	color: darkgrey;
+	text-align: center;
+}
+
+#home {
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	display: inline;
+	position: absolute;
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#audio1 {
+	color: grey;
+	display: inline;
+	position: absolute;
+	z-index: 1;
+	margin-top: 100px;
+	margin-left: 520px;
+	text-decoration: none;
+    animation: fadein 4s;
+    font-size: 40px;
+}
+
+#audio1:hover {
+cursor: pointer;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#afbeelding1 {
+	margin-left: 500px;
+	display: none;
+	height: 635px;
+	width: 960px;
+	position: absolute;
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#foobar { 
+	display: none 
+}
+
+#audio2 {
+	color: grey;
+	display: inline;
+	position: absolute;
+	z-index: 1;
+	margin-top: 160px;
+	margin-left: 520px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+#audio2:hover {
+	cursor: pointer;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#titles {
+	color: darkgrey;
+	text-align: center;
+	position: absolute;
+}
+
+#desc {
+	color: darkgrey;
+	margin-left: 100px;
+	margin-top: 200px;
+	position: absolute;
+}
+
+#afbeelding2 {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#afbeelding3 {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#afbeelding4 {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#afbeelding5 {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#afbeelding5d {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#afbeelding6 {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#afbeelding6d {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+}
+
+#noKey {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+}
+
+#noKeyd {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+}
+
+#noD {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+}
+
+#ingang1 {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#voorkant1 {
+	display: none;
+	color: grey;
+	display:none;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#deur1 {
+	width: 33px;
+	height: 70px;
+	position: absolute;
+	margin-top: 354px;
+	margin-left: 780px;
+	z-index: 1;
+	display: none;
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#schuur {
+	color: grey;
+	display:none;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#dopper {
+	display: none;
+	height: 120px;
+	width: 40px;
+	position: absolute;
+	margin-top: 240px;
+	margin-left: 570px;
+	z-index: 1;
+    animation: fadein 4s;
+}
+
+#key1 {
+	display: none;
+	z-index: 0;
+	height: 100px;
+	width: 120px;
+	position: absolute;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#key {
+	display: none;
+	height: 20px;
+	width: 40px;
+	position: absolute;
+	margin-top: 240px;
+	margin-left: 670px;
+	z-index: 1;
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#dubbeleladder1 {
+	position: absolute;
+	margin-left: 500px;
+	margin-top: 235px;
+	z-index: 1;
+    height: 400px;
+    width: 400px;
+    display: none;
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#raam1 {
+	position: absolute;
+	margin-left: 545px;
+	margin-top: 215px;
+	z-index: 1;
+	display: none;
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/*inventory*/
+#inventory {
+	background-color: grey;
+	width: 100px;
+	height: 700px;
+	position: absolute;
+	margin-left: 1500px;
+}

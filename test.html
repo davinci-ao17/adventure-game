@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link rel="stylesheet" type="text/css" href="css/escapethehospital1.css">
+	<title>Escape the Hospital</title>
+	<meta charset="UTF-8">
+	<link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+  </head>
+  <body>
+	<h1 id="title">Escape the Hospital</h1>
+
+	<a id="audio1" onclick="begin();" onmouseover="playSound('rollover')" onmouseout="stopSound('rollover')">Play</a>
+	<a id="audio2" onclick="info();" onmouseover="playSound('rollover')" onmouseout="stopSound('rollover')">Information</a>
+
+	<div id="mapvoorkant">
+	<img src="img/1/8.jpg" id="voorkant1" alt="voorkant">
+	</div>
+	<img src="img/1/deur.jpg" id="deur1" alt="deur1" onclick="schuur();">
+	<div id="mapschuur">
+
+	<img src="img/1/9.jpg" id="schuur" alt="schuur" usemap="#Schuur">
+	<map name="Schuur">		
+	</map>
+	</div>
+	<img src="img/items/dubbeleladder.png" alt="dubbeleladder" id="dubbeleladder1">
+	<img src="img/1/raam.jpg" alt="raam" id="raam1" onclick="raam">
+
+	<img src="img/items/dopper.png" id="dopper" alt="dopper" onclick="dopper1();">
+	<img src="img/items/key.png" id="key" alt="key" onclick="pickupKey();">
+
+
+	<h1 id="titles">Hospitalbed</h1>
+	<p id="desc">This text is broken.</p>
+
+	<script type="text/javascript" src="js/escapethehospital.js"></script>
+  </body>
+  
+</html>
