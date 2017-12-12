@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Survival - Adventure Game</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	</head>
+
+	<body>
+		<main>
+			<div id="mainMenu">
+				<img id="mainmenuImage" src="img/survival.jpg" alt="mainmenupicture">
+				<h1 id="title">Survival</h1>
+				<div id="mainmenuoptions">
+					<button id="button_1" onclick="backstory()">Play</button>
+					<button id="button_2" onclick="howtoplay()">How to Play</button>
+					<button id="button_3" onclick="creditsmain()">Credits</button>
+				</div>
+			</div>
+			<div id="gameoverscenes">
+				<img id="GOIMG" src="img/gameover.png" alt="GAME OVER">
+				<h2 id="gameover-text">Game Over</h2>
+				<button id="button_go" value="Refresh Page" onClick="window.location.reload()">Try again</button>
+			</div>
+			<div id="backstoryScene">
+				<button id="button_start" onclick="scene1()">Start</button>
+				<p>Your name is <span id="username">Jack Colton</span>. You are an experienced survivalist. You are heading to North Dakota to investigate why people have gone missing. This region is marked as "point of no return". Nobody made it out of there alive, but you are willing to take the risk. Will you succeed or will you meet your end?<br><br>
+				Click the button to start...</p>
+			</div>
+			<div id="scene1">
+				<img id="imgScene" src="img/airplane.jpg" alt="scenepicture">
+				<img id="laptop" src="img/laptop.png" alt="laptop">
+				<img id="briefcase-closed" src="img/briefcase-closed.png" alt="briefcase-closed">
+				<img id="briefcase-open" src="img/briefcase-open.png" alt="briefcase-open">
+				<img id="waterbottleLaydown" src="img/waterbottle-laydown.png" alt="waterbottle">
+				<img id="parachuteLaydown" src="img/parachute-laydown.png" alt="parachute">
+				<img id="flaregunLaydown" src="img/flareguninventory.png" alt="flaregun">
+			</div>
+			<div id="howToPlayInfo">
+				<p>Controls:<br><br>Mouse<br><br><br><br><br>What you'll need to do.<br><br>Click on the available options<br><br><br><br><br>Goal:<br><br>Survive</p>
+				<button id="close_hTPI" onclick="mainmenu()">X</button>
+			</div>
+			<div id="credits_menu">
+				<p>Copyright &copy; 2017, Brandon van Zanten part of Radioactive Studios. All rights reserved.</p>
+				<img id="radio" src="img/Radio.png" alt="logopicture">
+				<button id="close_credits" onclick="mainmenu()">X</button>
+			</div>
+			<div id="textbox">
+				<p id="textbox-text"></p>
+				<div id="inventory">
+					<img id="phoneInventory" src="img/phoneinventory.png" alt="phone">
+					<img id="waterbottleInventory" src="img/waterbottleinventory.png" alt="waterbottle">
+					<img id="parachuteInventory" src="img/parachuteinventory.png" alt="parachute">
+					<img id="flaregunInventory" src="img/flareguninventory.png" alt="flaregun">
+				</div>
+			</div>
+			<div id="endingcredits">
+				<div id="wrapper">
+					<h1>Survival</h1>
+				    <h2>Directed By</h2>
+				    <h3>Brandon van Zanten</h3>
+				    <h2>Produced By</h2>
+				    <h3>Radioactive Studios</h3>
+				    <h2>An idea from</h2>
+				    <h3>Brandon van Zanten</h3>
+				    <h2>Music</h2>
+				    <h3>Survivor<br><br>Freelance Music Producers<br><br>C418<br><br>Steve Jablonsky</h3>
+				    <h2>Story</h2>
+				    <h3>Brandon van Zanten</h3>
+				    <h2>Sound FX</h2>
+				    <h3>Freelance Sound FX Producers<br><br>Distant Drums<br><br>Efteling<br><br>Mark Lampert</h3>
+				    <h2>Characters</h2>
+				    <h3>Brandon van Zanten</h3>
+				    <h2>Programming</h2>
+				    <h3>Brandon van Zanten</h3>
+				    <h2>Design</h2>
+				    <h3>Brandon van Zanten</h3>
+				    <h2>Testers</h2>
+				    <h3>Kelvin Wijkniet<br><br>Melissa van Zanten<br><br>Ludo de Vries<br><br>Damiën Peerbolte</h3>
+				</div>
+			</div>
+			<div id="endingearly">
+				<p><span id="username1">Jack Colton</span> thinks about all the missing people. You don't want the same fate as all those missing people. You chickened out.</p>
+				<button id="button_earlyend" value="Refresh Page" onClick="window.location.reload()">Start over</button>
+				<button id="button_earlyendcredits" onclick="earlycredits()">End game</button>
+			</div>
+			<div id="endinggood">
+				<p><span id="username2">Jack Colton</span> is the first person that made it out alive, but you still don't know how people are gone missing. Atleast you live to tell the tale...</p>
+				<button id="button_goodend" value="Refresh Page" onClick="window.location.reload()">Start over</button>
+				<button id="button_goodendcredits" onclick="sceneending()">End game</button>
+			</div>
+			<div id="endingbest">
+				<p><span id="username3">Jack Colton</span> is the first person that made it out alive and you know who is behind all this. The next day you got to the police and told everything. You had 1 goal and that is to make sure that he ends behind the bars. The very next day the police entered the shack that is empty. The man from the shack got away...</p>
+				<button id="button_bestend" value="Refresh Page" onClick="window.location.reload()">Start over</button>
+				<button id="button_bestendcredits" onclick="scenebestending()">End game</button>
+			</div>
+		</main>
+		<footer>		<!-- Choices -->
+			<ul id="choicesmenu">
+				<li id="choiceOne" onclick=""></li>
+				<li id="choiceTwo" onclick=""></li>
+				<li id="choiceThree" onclick=""></li>
+				<li id="choiceFour" onclick=""></li>
+			</ul>
+		</footer>
+
+		<audio id="mainmenumusic" loop autoplay src="audio/mainmenumusic.mp3"></audio>
+		<audio id="planesound" loop autoplay src="audio/planesound.mp3"></audio>
+		<audio id="skiessound" loop autoplay src="audio/skiessound.mp3"></audio>
+		<audio id="wilhelmscream" autoplay src="audio/wilhelmscream.mp3"></audio>
+		<audio id="lakesound" loop autoplay src="audio/lakesounds.mp3"></audio>
+		<audio id="creditsmusic" autoplay src="audio/survival.mp3"></audio>
+		<audio id="clickbutton" autoplay src="audio/clickbutton.mp3"></audio>
+		<audio id="outsideshacksound" loop autoplay src="audio/outsideshack.mp3"></audio>
+		<audio id="shackmusic" loop autoplay src="audio/shackmusic.mp3"></audio>
+		<audio id="cavesounds" loop autoplay src="audio/cavesounds.mp3"></audio>
+		<audio id="woodssounds" loop autoplay src="audio/woodssound.mp3"></audio>
+		<audio id="openchest" autoplay src="audio/chestopen.mp3"></audio>
+		<audio id="closedchest" autoplay src="audio/chestclosed.mp3"></audio>
+		<audio id="itempickup" autoplay src="audio/pickupsound.mp3"></audio>
+		<audio id="useitem" autoplay src="audio/useitem.mp3"></audio>
+		<audio id="gameovermusic" loop autoplay src="audio/gameovermusic.mp3"></audio>
+		<script src="script.js"></script>
+	</body>
+
+</html>

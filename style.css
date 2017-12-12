@@ -1,0 +1,547 @@
+body {
+	margin: 0 auto;
+	background-color: #000;
+	overflow: hidden;
+}
+
+* {
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;
+}
+
+#mainmenuImage {
+	position: fixed;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+    animation: fadein 3s;
+    display: block;
+    pointer-events: none;
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;
+}
+
+#laptop {
+	display: none;
+	position: absolute;
+	height: 100px;
+	width: 150px;
+	top: 200px;
+	left: 400px;
+
+}
+
+#waterbottleLaydown {
+	display: none;
+	position: absolute;
+	height: 40px;
+	width: 60px;
+	top: 215px;
+	left: 210px;
+}
+
+#parachuteLaydown {
+	display: none;
+	position: absolute;
+	transform: rotate(175deg);
+	height: 60px;
+	width: 80px;
+	top: 246px;
+	left: 440px;
+}
+
+#flaregunLaydown {
+	display: none;
+	position: absolute;
+	transform: rotate(10deg);
+	height: 20px;
+	width: 40px;
+	top: 355px;
+	left: 10px;
+}
+
+#laptop:hover {
+	-webkit-transform: scale(3);
+    transform: scale(3);
+}
+
+#inventory {
+	display: none;
+	position: fixed;
+	bottom: 337px;
+	background-color: white;
+	height: 65px;
+	width: 650px;
+	padding: 10px;
+    -webkit-border-radius: 0 20px 20px 0;
+    border-radius: 0 20px 20px 0;
+}
+
+#phoneInventory {
+	display: none;
+	position: relative;
+	height: 80px;
+	bottom: 7px;
+	width: 70px;
+	border: 2px solid black;
+}
+
+#waterbottleInventory {
+	display: none;
+	position: relative;
+	height: 80px;
+	bottom: 7px;
+	width: 70px;
+	border: 2px solid black;
+}
+
+#parachuteInventory {
+	display: none;
+	position: relative;
+	height: 80px;
+	bottom: 7px;
+	width: 70px;
+	border: 2px solid black;
+}
+
+#flaregunInventory {
+	display: none;
+	position: relative;
+	height: 80px;
+	bottom: 7px;
+	width: 70px;
+	border: 2px solid black;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+	from { opacity: 1; }
+	to   { opacity: 0; }
+}
+
+#title {
+	position: absolute;
+	left: 635px;
+	font-family: "Trebuchet MS", Gadget, sans-serif;
+	color: #fff;
+	animation: fadein 3s;
+	font-size: 50px;
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;
+	pointer-events: none;
+}
+
+#gameoverscenes {
+	display: none;
+	position: absolute;
+}
+
+#gameover-text {
+	display: none;
+	position: relative;
+	bottom: 15px;
+	padding-left: 90px;
+	font-family: "Trebuchet MS", Gadget, sans-serif;
+	color: red;
+	font-size: 40px;
+	top: 350px;
+}
+
+#GOIMG {
+	display: none;
+	position: fixed;
+	left: 220px;
+	height: 600px;
+	width: 1000px;
+	bottom: 250px;
+}
+
+#mainmenuoptions {
+	position: absolute;
+	left: 630px;
+	animation: fadein 3s;
+}
+
+#button_1 {
+	position: absolute;
+	height: 100px;
+	top: 150px;
+	width: 200px;
+	font-size: 20px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	border-radius: 12px;
+	border: none;
+    outline: none;
+}
+
+#button_2 {
+	position: absolute;
+	height: 100px;
+	top: 350px;
+	width: 200px;
+	font-size: 20px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	border-radius: 12px;
+	border: none;
+    outline: none;
+}
+
+#button_3 {
+	position: absolute;
+	height: 100px;
+	top: 550px;
+	width: 200px;
+	font-size: 20px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	border-radius: 12px;
+	border: none;
+    outline: none;
+}
+
+#button_go {
+	position: absolute;
+	height: 70px;
+	top: 620px;
+	width: 200px;
+	font-size: 20px;
+	left: 620px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	border-radius: 12px;
+	border: none;
+    outline: none;
+}
+
+#button_earlyend {
+	position: absolute;
+	height: 70px;
+	top: 620px;
+	width: 200px;
+	font-size: 20px;
+	left: 450px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	border-radius: 12px;
+	border: none;
+    outline: none;
+}
+
+#button_earlyendcredits {
+	position: absolute;
+	height: 70px;
+	top: 620px;
+	width: 200px;
+	font-size: 20px;
+	left: 750px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	border-radius: 12px;
+	border: none;
+    outline: none;
+}
+
+#button_goodend {
+	position: absolute;
+	height: 70px;
+	top: 620px;
+	width: 200px;
+	font-size: 20px;
+	left: 450px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	border-radius: 12px;
+	border: none;
+    outline: none;
+}
+
+#button_goodendcredits {
+	position: absolute;
+	height: 70px;
+	top: 620px;
+	width: 200px;
+	font-size: 20px;
+	left: 750px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	border-radius: 12px;
+	border: none;
+    outline: none;
+}
+
+#button_bestend {
+	position: absolute;
+	height: 70px;
+	top: 620px;
+	width: 200px;
+	font-size: 20px;
+	left: 450px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	border-radius: 12px;
+	border: none;
+    outline: none;
+}
+
+#button_bestendcredits {
+	position: absolute;
+	height: 70px;
+	top: 620px;
+	width: 200px;
+	font-size: 20px;
+	left: 750px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	border-radius: 12px;
+	border: none;
+    outline: none;
+}
+/*When you click the play button*/
+#backstoryScene {
+	display: none;
+}
+
+#backstoryScene p {
+	color: white;
+	font-size: 35px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 200px;
+	font-family: "Arial", Gadget, sans-serif;
+}
+
+#button_start {
+	position: absolute;
+	height: 75px;
+	left: 630px;
+	top: 550px;
+	width: 200px;
+	font-size: 20px;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+/*When you click the how to play button*/
+#howToPlayInfo {
+	display: none;
+	position: relative;
+	width: 100%;
+	height: 100vw;
+	background-color: #777;
+}
+
+#howToPlayInfo p {
+	text-align: center;
+	color: black;
+	font-size: 25px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	padding-left: 20px;
+}
+
+#close_hTPI {
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	top: 0;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 30px;
+	color: red;
+}
+
+/*When you click the credits button*/
+#credits_menu {
+	display: none;
+	position: relative;
+	width: 100%;
+	height: 100vw;
+	background-color: #777;
+}
+
+#credits_menu p {
+	text-align: center;
+	color: black;
+	font-size: 25px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	padding-left: 20px;
+	padding-top: 50px;
+}
+
+#close_credits {
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	top: 0;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 30px;
+	color: red;
+}
+
+#radio {
+	position: absolute;
+	height: 500px;
+	width: 500px;
+	left: 500px;
+	top: 200px;
+}
+
+#textbox {
+	display: none;
+	padding-right: 20px;
+	position: relative;
+	float: right;
+	bottom: 405px;
+	height: 395.2px;
+	border: solid gray;
+	width: 832px;
+	background-color: #333;
+}
+
+#textbox-text {
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left: 20px;
+	font-size: 22px;
+	color: white;
+}
+
+footer {
+	width: 100%;
+	background-color: #969696;
+}
+
+#choicesmenu {
+	display: none;
+	position: relative;
+	height: 500px;
+	font-size: 30px;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	list-style-type: none;
+}
+
+#choiceOne:hover {
+	text-decoration: underline red;
+	cursor: pointer;
+}
+
+#choiceTwo:hover {
+	text-decoration: underline red;
+	cursor: pointer;
+}
+
+#choiceThree:hover {
+	text-decoration: underline red;
+	cursor: pointer;
+}
+
+#choiceFour:hover {
+	text-decoration: underline red;
+	cursor: pointer;
+}
+
+ul li {
+	text-decoration: none;
+	color: black;
+}
+
+#endingearly {
+	display: none;
+}
+
+#endingearly p {
+	color: white;
+	font-size: 35px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 200px;
+	font-family: "Arial", Gadget, sans-serif;
+}
+
+#endinggood {
+	display: none;
+}
+
+#endinggood p {
+	color: white;
+	font-size: 35px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 200px;
+	font-family: "Arial", Gadget, sans-serif;
+}
+
+#endingbest {
+	display: none;
+}
+
+#endingbest p {
+	color: white;
+	font-size: 35px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 200px;
+	font-family: "Arial", Gadget, sans-serif;
+}
+
+/*Scene 1*/
+
+#imgScene {
+	display: none;
+	height: 400px;
+	width: 680px;
+}
+
+#briefcase-closed {
+	display: none;
+	width: 80px;
+	height: 60px;
+	position: absolute;
+	top: 200px;
+	left: 205px;
+}
+
+#briefcase-open {
+	display: none;
+	width: 120px;
+	height: 100px;
+	position: absolute;
+	top: 170px;
+	left: 185px;
+}
+
+#endingcredits{
+	display: none;
+}
+
+#wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 300px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  animation: 94s credits linear infinite;
+}
+
+#endingcredits #wrapper h1 {
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+
+#endingcredits #wrapper h2 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+#endingcredits #wrapper h3 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+@keyframes credits {
+    0% { top:  100%; }
+  100% { top: -500%; }
+}
