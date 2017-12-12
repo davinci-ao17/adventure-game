@@ -1452,7 +1452,7 @@ function escapebegin() {
 	link1.innerHTML = "Leave treasure room";
 	link2.innerHTML = "";
 	link3.innerHTML = "";
-	text.innerHTML = "That was easy then i thought.";
+	text.innerHTML = "That was easier then i thought.";
 	item1.src = "img/bijl.png";
 	item2.src = "img/diamond.png";
 	console.log(title);
