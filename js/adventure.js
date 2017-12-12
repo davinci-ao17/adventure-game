@@ -1129,7 +1129,7 @@ function templeleft2() {
 }
 function templeright() {
 	title.innerHTML = "underground - Temple left side";
-	image.src = "img/tempel side left rope.jpg";
+	image.src = "img/tempel side right rope.jpg";
 	link1.setAttribute("onclick", "tempelentrance()");
 	link2.setAttribute("onclick", "templeright2()");
 	link3.setAttribute("onclick", "()");
@@ -1139,7 +1139,7 @@ function templeright() {
 	text.innerHTML = "";
 }
 function templeright2() {
-	image.src = "img/tempel side left.jpg";
+	image.src = "img/tempel side right.jpg";
 	link1.setAttribute("onclick", "tempelentrance()");
 	link2.setAttribute("onclick", "()");
 	link3.setAttribute("onclick", "()");
@@ -1452,7 +1452,7 @@ function escapebegin() {
 	link1.innerHTML = "Leave treasure room";
 	link2.innerHTML = "";
 	link3.innerHTML = "";
-	text.innerHTML = "That was easier then i thought.";
+	text.innerHTML = "That was easy then i thought.";
 	item1.src = "img/bijl.png";
 	item2.src = "img/diamond.png";
 	console.log(title);
@@ -1635,7 +1635,7 @@ function escapeout() {
 function level_complete9() {
 	title.innerHTML = "";
 	image.src = "img/level_complete.png";
-	link1.setAttribute("onclick", "treasurebegin()");
+	link1.setAttribute("onclick", "endbegin()");
 	link2.setAttribute("onclick", "()");
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Next level";
@@ -1698,7 +1698,7 @@ if (events == 1) {
 	link1.innerHTML = "Turn around";
 	link2.innerHTML = "To the cellar";
 	link3.innerHTML = "To the kitchen";
-	text.innerHTML = "";
+	text.innerHTML = "My diamond is still there, thats good.";
 }
 }
 function endkitchen() {
