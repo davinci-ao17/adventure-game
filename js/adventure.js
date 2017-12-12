@@ -1431,7 +1431,7 @@ function treasuregrab() {
 function level_complete8() {
 	title.innerHTML = "";
 	image.src = "img/level_complete.png";
-	link1.setAttribute("onclick", "treasurebegin()");
+	link1.setAttribute("onclick", "escapebegin()");
 	link2.setAttribute("onclick", "()");
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Next level";
@@ -1658,7 +1658,7 @@ function endbegin() {
 	item1.src = "";
 	item2.src = "";
 	console.log(title);
-	
+
 }
 function endwoon() {
 	title.innerHTML = "House - Living room";
