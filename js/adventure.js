@@ -25,6 +25,7 @@ function optie1()
   link2.innerHTML = "to the ship's hold";
 	link3.setAttribute("onclick", "optie6()");
   link3.innerHTML = "to the captain's room";
+	link3.style.display = "inline-block"
 	console.log(title);
 }
 
@@ -36,8 +37,10 @@ function optie2()
   link1.innerHTML = "begin game";
   link2.setAttribute("onclick", "options1()");
   link2.innerHTML = "Level selection";
-	link3.setAttribute("onclick", "optie1()");
+	link3.setAttribute("onclick", "()");
   link3.innerHTML = "";
+	link3.style.display = "none";
+	link2.style.display = "inline-block";
 	text.innerHTML = "";
 }
 
@@ -48,7 +51,7 @@ function optie3() {
   link1.innerHTML = "Go back";
   link2.setAttribute("onclick", "optie4()");
   link2.innerHTML = "walk further";
-	link3.setAttribute("onclick", "optie1()");
+	link3.style.display = "none";
   link3.innerHTML = "";
 	text.innerHTML = "";
 }
@@ -60,8 +63,7 @@ function optie4() {
   link1.innerHTML = "Go back";
   link2.setAttribute("onclick", "optie5()");
   link2.innerHTML = "Grab key";
-	link3.setAttribute("onclick", "optie1()");
-  link3.innerHTML = "";
+	link3.style.display = "none";
 }
 
 function optie5() {
@@ -71,6 +73,7 @@ function optie5() {
 	link1.innerHTML = "Go back";
 	link2.setAttribute("onclick", "optie0()");
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.setAttribute("onclick", "optie0()");
 	link3.innerHTML = "";
 	item1.src = "img/oud sleutel.png";
@@ -89,6 +92,8 @@ function optie7() {
 	link1.innerHTML = "Go back";
 	link2.innerHTML = "Use key on box";
 	link3.innerHTML = "Go further";
+	link2.style.display = "inline-block";
+	link3.style.display = "inline-block";
 }
 function optie8() {
 	text.innerHTML = "Are you sure?";
@@ -98,6 +103,7 @@ function optie8() {
 	link1.innerHTML = "Yes i'm sure!";
 	link2.innerHTML = "Maybe not!";
 	link3.innerHTML = "";
+	link3.style.display = "none";
 }
 function gameover() {
 	title.innerHTML = "";
@@ -110,6 +116,8 @@ function gameover() {
 	link3.innerHTML = "";
 	text.innerHTML = "as you tried to open the mysterieus box, a hand grabbed you by the neck and push you towards the box. as you struggle to get out, the box opens, revieling his sharp teeth from the side. revieling itself as a mimic, it bites in your neck, making you bleed to death. ";
 	item1.src = "";
+	link2.style.display = "none";
+	link3.style.display = "none";
 }
 function optie9() {
 	title.innerHTML = "Schipdek";
@@ -119,6 +127,7 @@ function optie9() {
   link2.setAttribute("onclick", "optie10()");
   link2.innerHTML = "use key for the captain's room";
 	link3.setAttribute("onclick", "optie0()");
+	link3.style.display = "none";
   link3.innerHTML = "";
 	text.innerHTML = "";
 }
@@ -141,6 +150,7 @@ function optie11() {
 	link1.innerHTML = "Open the box";
 	link2.innerHTML = "";
 	link3.innerHTML = "";
+	link2.style.display = "none";
 	text.innerHTML = "It doesn't look like there's a lock on the box";
 }
 function optie12() {
@@ -185,6 +195,8 @@ function house() {
 	link1.innerHTML = "Go in house";
 	link2.innerHTML = "";
 	link3.innerHTML = "";
+	link2.style.display = "none";
+	link3.style.display = "none";
 	item1.src = "";
 	text.innerHTML = "This must be the house";
 	console.log(title);
@@ -200,6 +212,8 @@ function house2() {
 	link2.innerHTML = "Go to staircase";
 	link3.innerHTML = "Look at box";
 	item1.src = "";
+	link3.style.display = "inline-block";
+	link2.style.display = "inline-block";
 	text.innerHTML = "there's the hint box";
 }
 function house3() {
@@ -214,6 +228,7 @@ function house4() {
 	link1.innerHTML = "Go back";
 	link2.innerHTML = "Go upstairs";
 	link3.innerHTML = "";
+	link3.style.display = "none";
 	item1.src = "";
 	text.innerHTML = "";
 }
@@ -237,6 +252,7 @@ function house6() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Go downstairs";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
 	item1.src = "img/oud sleutel.png";
 	text.innerHTML = "Now i can finally open that box";
@@ -249,6 +265,7 @@ function house7() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Go back";
 	link2.innerHTML = "Go upstairs";
+	link2.style.display = "inline-block";
 	link3.innerHTML = "";
 	text.innerHTML = "";
 }
@@ -271,6 +288,7 @@ function house9() {
 	link3.setAttribute("onclick", "optie");
 	link1.innerHTML = "Go in house";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
 	text.innerHTML = "";
 }
@@ -303,6 +321,7 @@ function house12() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Open the box";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
 	text.innerHTML = "there's are words written on the top with blood. they say 'DoNt OpEn'. The blood looks still fresh.";
 }
@@ -313,6 +332,7 @@ function house13() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Get out of the room";
 	link2.innerHTML = "Wait until it goes";
+	link2.style.display = "inline-block";
 	link3.innerHTML = "";
 	item1.src = "";
 	text.innerHTML = "*cough* *cough* what is this smoke!";
@@ -320,11 +340,12 @@ function house13() {
 function gameover2() {
 	title.innerHTML = "";
 	image.src = "img/game over.jpg";
-	link1.setAttribute("onclick", "house10()");
+	link1.setAttribute("onclick", "house()");
 	link2.setAttribute("onclick", "()");
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Start over";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
 	text.innerHTML = "While waiting for the smoke to go away, you sense a odor coming from the smoke. it seems that the smoke is toxic and it got the better of you because you callepse to the ground and slowly die from the poisonous gasses";
 	item1.src = "";
@@ -337,6 +358,7 @@ function house14() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Go upstairs";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
 	text.innerHTML = "That was a close one. i wonder if the smoke is gone now.";
 }
@@ -391,7 +413,9 @@ function graf() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Go to cemetery";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
+	link3.style.display = "none";
 	item1.src = "";
 	text.innerHTML = "i don't like going into Cemeteries, but the hint says it is here.";
 	console.log(title);
@@ -404,6 +428,7 @@ function options1() {
 	link1.innerHTML = "level 1 - Ship";
 	link2.innerHTML = "level 2 - House";
 	link3.innerHTML = "next";
+	link3.style.display = "inline-block";
 }
 function options2() {
 	link1.setAttribute("onclick", "graf()");
@@ -445,6 +470,7 @@ function graf2() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Go left";
 	link2.innerHTML = "Go right";
+	link2.style.display = "inline-block";
 	link3.innerHTML = "";
 	item1.src = "";
 	text.innerHTML = "";
@@ -520,6 +546,7 @@ function grafinside2() {
  link3.setAttribute("onclick", "()");
  link1.innerHTML = "Go back";
  link2.innerHTML = "";
+ link2.style.display = "none";
  link3.innerHTML = "";
  item1.src = "img/oud sleutel.png";
  text.innerHTML = "What was that sound?";
@@ -532,6 +559,7 @@ function grafshed2() {
  link3.setAttribute("onclick", "()");
  link1.innerHTML = "Go back";
  link2.innerHTML = "Go in the shed";
+ link2.style.display = "inline-block";
  link3.innerHTML = "";
  text.innerHTML = "";
 }
@@ -565,6 +593,7 @@ function grafrightfire() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Go back";
 	link2.innerHTML = "Go to your grandfathers grave";
+	link2.style.display = "inline-block";
 	link3.innerHTML = "";
 	text.innerHTML = "Where did this fire come from";
 }
@@ -602,6 +631,7 @@ function grafshed3() {
  link1.innerHTML = "Go back";
  link2.innerHTML = "Go in the shed";
  link3.innerHTML = "Grab the bucket";
+ link3.style.display = "inline-block";
  text.innerHTML = "a bucket of water? maybe its usable.";
 }
 function graflose() {
@@ -612,7 +642,9 @@ function graflose() {
  link3.setAttribute("onclick", "()");
  link1.innerHTML = "Go back";
  link2.innerHTML = "";
+ link2.style.display = "none";
  link3.innerHTML = "";
+ link3.style.display = "none";
  item2.src = "img/emmer.png";
  text.innerHTML = "Nice, i can finally put out that fire.";
 }
@@ -624,6 +656,7 @@ function graflose2() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Go back";
 	link2.innerHTML = "Go to the cemeteries shed";
+	link2.style.display = "inline-block";
 	link3.innerHTML = "";
 	text.innerHTML = "";
 }
@@ -646,6 +679,7 @@ function graflose4() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "put down the fire";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
 	text.innerHTML = "lets put down this fire!";
 }
@@ -681,6 +715,7 @@ function grafwin2() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Go back";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
 	item2.src = "img/brandblusser.png";
 	text.innerHTML = "";
@@ -693,6 +728,7 @@ function grafwin3() {
  link3.setAttribute("onclick", "()");
  link1.innerHTML = "Go back";
  link2.innerHTML = "Go in the shed";
+ link2.style.display = "inline-block";
  link3.innerHTML = "";
  text.innerHTML = "";
 }
@@ -726,6 +762,7 @@ function grafwin6() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "put down the fire";
 	link2.innerHTML = "";
+	link2.style.display = "inline-block";
 	link3.innerHTML = "";
 	text.innerHTML = "lets put down this fire!";
 }
@@ -805,7 +842,9 @@ function mijnbegin() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Inspect door";
 	link2.innerHTML = "Inspect the side";
+	link2.style.display = "inline-block";
 	link3.innerHTML = "";
+	link3.style.display = "none";
 	text.innerHTML = "This is where the map lead me.";
 	console.log(title);
 
@@ -832,6 +871,7 @@ function mijnside2() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Go back";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
 	text.innerHTML = "";
 	item1.src = "img/bijl.png";
@@ -844,6 +884,7 @@ function mijnbegin2() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Break down door";
 	link2.innerHTML = "Inspect the side";
+	link2.style.display = "inline-block";
 	link3.innerHTML = "";
 	text.innerHTML = "i can hopefully break the door with my axe.";
 }
@@ -855,6 +896,7 @@ function mijncomplete() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Go in mine - Complete level";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
 	text.innerHTML = "treasure, here i come!";
 }
@@ -878,7 +920,9 @@ function grondbegin() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Walk further";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
+	link3.style.display = "none";
 	item1.src = "img/bijl.png";
 	text.innerHTML = "Jeez, its so foggy and scary here";
 }
@@ -901,6 +945,7 @@ function grondsplit() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Left path";
 	link2.innerHTML = "Right path";
+	link2.style.display = "inline-block";
 	link3.innerHTML = "";
 	text.innerHTML = "a splitting. The treasure must be thru one of these paths. i just need to find the right on.";
 }
@@ -978,6 +1023,7 @@ function grondlose() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Walk further";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
 	text.innerHTML = "this must be the right way";
 }
@@ -1048,7 +1094,9 @@ function tempelbegin() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Walk further";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
+	link3.style.display = "none";
 	item1.src = "img/bijl.png";
 	text.innerHTML = "Woah... This looks beautiful";
 	console.log(title);
@@ -1063,7 +1111,9 @@ if (rope == 1 && rope2 == 1) {
 	link3.setAttribute("onclick", "templeopen()");
 	link1.innerHTML = "Go left side";
 	link2.innerHTML = "Go right side";
+	link2.style.display = "inline-block";
 	link3.innerHTML = "Inspect door";
+	link3.style.display = "inline-block";
 	text.innerHTML = "thats all off them";
 } else if (rope == 1) {
 	title.innerHTML = "underground - Temple entrance";
@@ -1073,7 +1123,9 @@ if (rope == 1 && rope2 == 1) {
 	link3.setAttribute("onclick", "templeinspect()");
 	link1.innerHTML = "Go left side";
 	link2.innerHTML = "Go right side";
+	link2.style.display = "inline-block";
 	link3.innerHTML = "inspect door";
+	link3.style.display = "inline-block";
 	text.innerHTML = "";
 } else if (rope2 == 1) {
 	title.innerHTML = "underground - Temple entrance";
@@ -1083,8 +1135,10 @@ if (rope == 1 && rope2 == 1) {
 	link3.setAttribute("onclick", "templeinspect()");
 	link1.innerHTML = "Go left side";
 	link2.innerHTML = "Go right side";
+	link2.style.display = "inline-block";
 	link3.innerHTML = "inspect door";
-	text.innerHTML = ".";
+	link3.style.display = "inline-block";
+	text.innerHTML = "";
 } else {
 	title.innerHTML = "underground - Temple entrance";
 	image.src = "img/tempel deur closed.jpg";
@@ -1093,7 +1147,9 @@ if (rope == 1 && rope2 == 1) {
 	link3.setAttribute("onclick", "templeinspect()");
 	link1.innerHTML = "Go left side";
 	link2.innerHTML = "Go right side";
+	link2.style.display = "inline-block";
 	link3.innerHTML = "inspect door";
+	link3.style.display = "inline-block";
 	text.innerHTML = "Looks like i can't get in the easy way.";
 }
 }
@@ -1109,6 +1165,7 @@ function templeleft() {
 	link1.innerHTML = "Go back";
 	link2.innerHTML = "Cut rope";
 	link3.innerHTML = "";
+	link3.style.display = "none";
 	text.innerHTML = "";
 }
 function templeleft2() {
@@ -1118,6 +1175,7 @@ function templeleft2() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Go back";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
 	text.innerHTML = "";
 	if (rope == 1) {
@@ -1136,6 +1194,7 @@ function templeright() {
 	link1.innerHTML = "Go back";
 	link2.innerHTML = "Cut rope";
 	link3.innerHTML = "";
+	link3.style.display = "none";
 	text.innerHTML = "";
 }
 function templeright2() {
@@ -1145,6 +1204,7 @@ function templeright2() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Go back";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
 	text.innerHTML = "";
 	if (rope2 == 1) {
@@ -1156,12 +1216,14 @@ function templeright2() {
 function templeopen() {
 	title.innerHTML = "underground - Temple entrance";
 	image.src = "img/tempel deur open.jpg";
-	link1.setAttribute("onclick", "templeleft2()");
-	link2.setAttribute("onclick", "templeright2()");
-	link3.setAttribute("onclick", "level_complete6()");
-	link1.innerHTML = "Go left side";
-	link2.innerHTML = "Go right side";
-	link3.innerHTML = "Go in tempel";
+	link1.setAttribute("onclick", "level_complete6()");
+	link2.setAttribute("onclick", "()");
+	link3.setAttribute("onclick", "()");
+	link1.innerHTML = "Go in temple";
+	link2.innerHTML = "";
+	link2.style.display = "none";
+	link3.innerHTML = "";
+	link3.style.display = "none";
 	text.innerHTML = "nice, its open.";
 }
 function level_complete6() {
@@ -1190,7 +1252,9 @@ if (piece == 1) {
 	link3.setAttribute("onclick", "insidewin()");
 	link1.innerHTML = "Go left";
 	link2.innerHTML = "Go right";
+	link2.style.display = "inline-block";
 	link3.innerHTML = "Put piece in hole";
+	link3.style.display = "inline-block";
 	text.innerHTML = "";
 } else {
 	link1.setAttribute("onclick", "insideleft()");
@@ -1198,7 +1262,9 @@ if (piece == 1) {
 	link3.setAttribute("onclick", "insideinspect()");
 	link1.innerHTML = "Go left";
 	link2.innerHTML = "Go right";
+	link2.style.display = "inline-block";
 	link3.innerHTML = "Inspect door";
+	link3.style.display = "inline-block";
 	text.innerHTML = "wow, its... really foggy and wet in here";
 }
 }
@@ -1220,6 +1286,7 @@ if (key == 1) {
 	link1.innerHTML = "Go back";
 	link2.innerHTML = "Go to the left room";
 	link3.innerHTML = "";
+	link3.style.display = "none";
 	text.innerHTML = "";
 }
 function insideleftroom() {
@@ -1230,6 +1297,7 @@ function insideleftroom() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Go back";
 	link2.innerHTML = "Take key";
+	link2.style.display = "inline-block";
 	link3.innerHTML = "";
 	text.innerHTML = "";
 }
@@ -1241,6 +1309,7 @@ function insideleftroom2() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Go back";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
 	text.innerHTML = "";
 	if (key == 1) {
@@ -1264,7 +1333,9 @@ function insideright() {
 	}
 	link1.innerHTML = "Go back";
 	link2.innerHTML = "Go to the right room";
+	link2.style.display = "inline-block";
 	link3.innerHTML = "";
+	link3.style.display = "none";
 	text.innerHTML = "";
 }
 function insiderightroom() {
@@ -1284,6 +1355,7 @@ if (key == 1) {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Go back";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
 	text.innerHTML = "";
 }
@@ -1296,6 +1368,7 @@ function insiderightroom2() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Go back";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
 	text.innerHTML = "";
 	item2.src = "img/piece.png";
@@ -1313,7 +1386,9 @@ function insidewin() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Open door";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
+	link3.style.display = "none";
 	text.innerHTML = "There we go";
 	item2.src = "";
 }
@@ -1354,7 +1429,9 @@ if (bag == 1) {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Walk further";
 	link2.innerHTML = "Grab diamond";
+	link2.style.display = "inline-block";
 	link3.innerHTML = "";
+	link3.style.display = "none";
 	text.innerHTML = "I have to be carefull";
 } else {
 	link1.setAttribute("onclick", "treasureroom()");
@@ -1362,7 +1439,9 @@ if (bag == 1) {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Walk further";
 	link2.innerHTML = "Grab diamond";
+	link2.style.display = "inline-block";
 	link3.innerHTML = "";
+	link3.style.display = "none";
 	text.innerHTML = "wooaaww... look at all this money. I'M RICH. that diamond must be the real treasure.";
 }
 }
@@ -1372,7 +1451,7 @@ function treasureroom() {
 	link1.setAttribute("onclick", "treasurebegin()");
 	link2.setAttribute("onclick", "treasureroom2()");
 	link3.setAttribute("onclick", "()");
-	link1.innerHTML = "Walk further";
+	link1.innerHTML = "Go back";
 	link2.innerHTML = "Grab bag";
 	link3.innerHTML = "";
 	text.innerHTML = "Money bags! think i can use one.";
@@ -1383,8 +1462,9 @@ function treasureroom2() {
 	link1.setAttribute("onclick", "treasurebegin()");
 	link2.setAttribute("onclick", "()");
 	link3.setAttribute("onclick", "()");
-	link1.innerHTML = "Walk further";
+	link1.innerHTML = "Go back";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
 	text.innerHTML = "";
 	item2.src = "img/bag.png"
@@ -1411,6 +1491,7 @@ function gameover5() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Start over";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
 	text.innerHTML = "You grab the diamond, but with a risk. as you hear a click coming from the pillar, the floor begins to shake and the room begins to collapse, burying you and the treasure with you.";
 	item1.src = "";
@@ -1424,6 +1505,7 @@ function treasuregrab() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Complete level";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
 	text.innerHTML = "Got it!";
 	item2.src = "img/diamond.png";
@@ -1616,7 +1698,7 @@ function escapemineshaft2() {
 	link1.setAttribute("onclick", "escapeout()");
 	link2.setAttribute("onclick", "()");
 	link3.setAttribute("onclick", "()");
-	link1.innerHTML = "Walk further";
+	link1.innerHTML = "RUN";
 	link2.innerHTML = "";
 	link3.innerHTML = "";
 	text.innerHTML = "";
@@ -1653,7 +1735,9 @@ function endbegin() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Next";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
+	link3.style.display = "none";
 	text.innerHTML = "";
 	item1.src = "";
 	item2.src = "";
@@ -1668,7 +1752,9 @@ function endwoon() {
 	link3.setAttribute("onclick", "endkitchen()");
 	link1.innerHTML = "Turn around";
 	link2.innerHTML = "To the cellar";
+	link2.style.display = "inline-block";
 	link3.innerHTML = "To the kitchen";
+	link3.style.display = "inline-block";
 	if (events == 1) {
 		text.innerHTML = "";
 
@@ -1709,7 +1795,9 @@ function endkitchen() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Go back";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
+	link3.style.display = "none";
 	if (events == 1) {
 		text.innerHTML = "";
 	} else {
@@ -1729,6 +1817,7 @@ if (events == 1) {
 	link1.innerHTML = "Go back";
 	link2.innerHTML = "Look at hole";
 	link3.innerHTML = "";
+	link3.style.display = "none";
 	text.innerHTML = "A hole? where did that come from?";
 } else {
 	title.innerHTML = "House - Cellar";
@@ -1738,7 +1827,9 @@ if (events == 1) {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "Go back";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
+	link3.style.display = "none";
 	text.innerHTML = "No reason to be here.";
 }
 }
@@ -1748,6 +1839,7 @@ function endinspect() {
 	link3.setAttribute("onclick", "()");
 	link1.innerHTML = "break open wall";
 	link2.innerHTML = "";
+	link2.style.display = "none";
 	link3.innerHTML = "";
 	text.innerHTML = "The stone in the wall feel loose. i think i can break them open.";
 }
