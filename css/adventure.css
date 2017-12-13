@@ -13,10 +13,6 @@ footer {
 }
 ul#options li {
   display: inline-block;
-  background-color: lightblue;
-  padding: 10px 10px;
-  border: solid 3px blue;
-  border-radius: 5px;
 }
 ul#items li {
   display: inline-block;
@@ -24,4 +20,22 @@ ul#items li {
 a {
   text-decoration: none;
   color: white;
+}
+#link1 {
+  background-color: lightblue;
+  padding: 10px 10px;
+  border: solid 3px blue;
+  border-radius: 5px;
+}
+#link2 {
+  background-color: lightblue;
+  padding: 10px 10px;
+  border: solid 3px blue;
+  border-radius: 5px;
+}
+#link3 {
+  background-color: lightblue;
+  padding: 10px 10px;
+  border: solid 3px blue;
+  border-radius: 5px;
 }
