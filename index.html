@@ -3,37 +3,124 @@
   <head>
     <meta charset="utf-8">
     <title>OFTU | Orders From The Unknown</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" />
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="http://code.jquery.com/jquery-1.4.4.min.js" type="text/javascript"></script>
   </head>
   <body>
     <main>
+      <div id="inventory">
+        <div id="invSlotOne" class="inventorySlot">
+          <img id="invPistol" src="assets/images/pistol.png" alt="pistol.png">
+        </div>
+        <div id="invSlotTwo" class="inventorySlot">
+          <img id="invVMask" src="assets/images/vmask.png" alt="vmask.png">
+        </div>
+        <div id="invSlotThree" class="inventorySlot">
+
+        </div>
+        <div id="invSlotFour" class="inventorySlot">
+
+        </div>
+        <div id="invSlotFive" class="inventorySlot">
+
+        </div>
+      </div>
       <div class="intrologo" id="intrologo">
         <img src="assets/images/intrologo.png" alt="intrologo" width="300">
         <h1 class="introtext">PRESENTS:</h1>
       </div>
       <div class="gamename" id="gamename">
-        <h1>Orders From The Unknown</h1>
+        <img src="assets/images/logo.png" alt="logo.png">
       </div>
       <div id="mainMenu">
-        <h1>Orders From The Unknown</h1>
-        <button type="button" class="hvr-shrink" onclick="playButton(); snd.play();">PLAY</button><br>
-        <button type="button" class="hvr-shrink" onclick="infoButton(); snd.play();">INFO</button><br>
-        <button type="button" class="hvr-shrink" onclick="creditsButton(); snd.play();">CREDITS</button>
+        <img src="assets/images/logo.png" alt="logo.png"><br>
+        <button id="playButton" type="button" class="hvr-shrink" onclick="playButton(); gunShotSound();">PLAY
+          <img id="peekingSkeletonOne" src="assets/images/skeletonCartoonPeeking.png" alt="skeletonCartoonPeeking.png">
+        </button><br>
+        <button id="infoButton" type="button" class="hvr-shrink" onclick="infoButton(); gunShotSound();">INFO
+          <img id="peekingSkeletonTwo" src="assets/images/skeletonCartoonPeeking.png" alt="skeletonCartoonPeeking.png">
+        </button><br>
+        <button id="creditsButton" type="button" class="hvr-shrink" onclick="creditsButton(); gunShotSound();">CREDITS
+          <img id="peekingSkeletonThree" src="assets/images/skeletonCartoonPeeking.png" alt="skeletonCartoonPeeking.png">
+        </button><br>
       </div>
       <div class="infoTab" id="infoTab">
-        <button class="closeTab hvr-shrink" onclick="closeTab(); snd.play();">X</button>
+        <button class="closeTab hvr-shrink" onclick="closeTab(); gunShotSound();">X</button>
         <h1>How To Play</h1>
-        <p>blahblahblah</p>
+        <p>Press on 'play' to start the game. Remember! You make the choices!</p>
       </div>
       <div class="infoTab" id="creditsTab">
-        <button class="closeTab hvr-shrink" onclick="closeTab(); snd.play();">X</button>
+        <button class="closeTab hvr-shrink" onclick="closeTab(); gunShotSound();">X</button>
         <h1>Credits</h1>
-        <p>This game is made by: Damiën Peerbolte</p>
+        <p>Game by: Damiën Peerbolte</p>
+        <p>Pictures by: Damiën Peerbolte(made in Unity3d)</p>
+        <p>Sound Effects by: some random website</p>
+        <p>Story by: Damiën Peerbolte</p>
+        <p>Inspired by: Seen(Android Game), Emily is Away(Steam Game)</p>
       </div>
       <div id="storyContainer">
         <div id="storyTexts"></div>
         <button onclick="Next()" id="nextButton" class="nextButton"></button>
+      </div>
+        <img onclick="turnPhoneOn()" id="phoneOff" class="phoneOff" src="assets/images/phoneOff.png" alt="phoneOff.png">
+        <img id="phoneLocked" class="phoneLocked" src="assets/images/phoneLocked.png" alt="phoneLocked.png">
+      </div>
+      <div id="callingPhone">
+        <img id="phoneCallIn" class="phoneCallIn" src="assets/images/phoneCallIn.png" alt="phoneCallIn.png">
+        <button onclick="callAnswer(); Next();" id="phoneAnswer" class="phoneAnswer">Answer</button>
+        <button onclick="callDecline();" id="phoneDecline" class="phoneDecline">Decline</button>
+      </div>
+      <img id="deadScreen" src="assets/images/deadscreen.jpg" alt="deadscreen.jpg">
+      <div id="choiceOne" class="buttonChoice">
+        <br>
+        <button id="choiceOneOne" onclick="setTimeout(function(){ toSceneTwo(); }, 500);" class="hvr-shrink buttonDesign buttonChoice">Ok, but you have to let me go after!</button>
+        <button id="choiceOneTwo" onclick="dead()" class="hvr-shrink buttonDesign">Nope.. I'm not doing that!</button>
+      </div>
+      <div id="choiceTwo" class="buttonChoice">
+        <br>
+        <button onclick="sceneTwoEnding(); toSceneThree();" id="choiceTwoOne" class="hvr-shrink buttonDesign buttonChoice">Confirm</button>
+        <button onclick="document.getElementById('storyTexts').innerHTML = 'Alright.. You had a choice..'; setTimeout(function(){ dead(); }, 1500);" id="choiceTwoTwo" class="hvr-shrink buttonDesign">Cancel</button>
+      </div>
+      <div id="choiceThree" class="buttonChoice">
+        <button onclick="Next(); removeChoiceThree();" id="choiceThreeOne" class="hvr-shrink buttonDesign buttonChoice">Alright...</button>
+        <button onclick="dead()" id="choiceThreeTwo" class="hvr-shrink buttonDesign buttonChoice">Oh hello no!</button>
+      </div>
+      <div id="choiceFour" class="buttonChoice">
+        <button onclick="Next()" id="choiceFourOne" class="hvr-shrink buttonDesign buttonChoice">Who are you?</button>
+        <button onclick="Next()" id="choiceFourTwo" class="hvr-shrink buttonDesign buttonChoice">Where are we going?</button>
+        <button onclick="Next()" id="choiceFourThree" class="hvr-shrink buttonDesign buttonChoice">Say nothing</button>
+      </div>
+      <div id="choiceFive" class="buttonChoice">
+        <button onclick="Next()" id="choiceFiveOne" class="hvr-shrink buttonDesign buttonChoice">Hit the man on his head</button>
+        <button onclick="current++; Next();" id="choiceFiveTwo" class="hvr-shrink buttonDesign buttonChoice">Wait for the car to stop</button>
+      </div>
+      <div id="choiceSix" class="buttonChoice">
+        <button onclick="grabbedGun = true; updateInv(); pickUpSound();" id="choiceSixOne" class="hvr-shrink buttonDesign buttonChoice">Grab gun</button>
+        <button onclick="grabbedMask = true; updateInv(); pickUpSound();" id="choiceSixTwo" class="hvr-shrink buttonDesign buttonChoice">Grab mask</button>
+      </div>
+      <div id="choiceSeven" class="buttonChoice">
+        <button onclick="Next()" id="choiceSevenOne" class="hvr-shrink buttonDesign buttonChoice">Ehmm...</button>
+        <button onclick="current++; Next();" id="choiceSevenTwo" class="hvr-shrink buttonDesign buttonChoice">Wait.. I can't do this...</button>
+      </div>
+      <div id="choiceEight" class="buttonChoice">
+        <button onclick="current++; Next();" id="choiceEightOne" class="hvr-shrink buttonDesign buttonChoice">Ehh.. Alright.. How.. When..!?</button>
+      </div>
+      <div id="choiceNine" class="buttonChoice">
+        <button onclick="Next(); setTimeout(function(){ dead(); }, 3000);" id="choiceNineOne" class="hvr-shrink buttonDesign buttonChoice">Shoot at the driver</button>
+        <button onclick="choiceNineTwo()" id="choiceNineTwo" class="hvr-shrink buttonDesign buttonChoice">Walk towards the store</button>
+      </div>
+      <div id="choiceTen" class="buttonChoice">
+        <button onclick="Next()" id="choiceTenOne" class="hvr-schrink buttonDesign buttonChoice">"Give me all the money you got!"</button>
+        <button onclick="Next()" id="choiceTenThree" class="hvr-shrink buttonDesign buttonChoice">Escape through the backdoor</button>
+      </div>
+      <div id="choiceEleven" class="buttonChoice">
+        <button onclick="Next()" id="choiceElevenOne" class="hvr-shrink buttonDesign buttonChoice">Cops...</button>
+        <button onclick="Next()" id="choiceElevenTwo" class="hvr-shrink buttonDesign buttonChoice">...</button>
+      </div>
+      <div id="choiceTwelve" class="buttonChoice">
+        <button onclick="Next()" id="choiceTwelveOne" class="hvr-shrink buttonDesign buttonChoice">Wait till you're at the house</button>
+        <button onclick="current++; Next();" id="choiceTwelveTwo" class="hvr-shrink buttonDesign buttonChoice">Hit the man real hard</button>
       </div>
     </main>
   </body>

@@ -3,6 +3,8 @@ body {
   font-family: arial;
   background-size: cover;
   background-repeat: no-repeat;
+  outline: none;
+  user-select: none;
 }
 
 .intrologo {
@@ -24,9 +26,14 @@ body {
   user-select: none;
 }
 
+#mainMenu img {
+  margin: 0 auto;
+  width: 50%;
+}
+
 #mainMenu {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 5%;
   display: none;
   opacity: 0;
   user-select: none;
@@ -44,18 +51,45 @@ body {
   font-family: courier;
 }
 
+button.buttonDesign {
+  margin-bottom: 8px;
+  padding: 10px;
+  width: 200px;
+  outline: none;
+  background-color: rgba(50, 50, 50, 0.5);
+  border: 2px solid gray;
+  color: white;
+  font-size: 120%;
+}
+
+.buttonChoice {
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+}
+
 #creditsTab {
+  display: none;
+}
+
+#choiceThree {
+  margin: 0 auto;
+}
+
+#choiceThree, #choiceThree button {
   display: none;
 }
 
 .infoTab {
   padding: 10px 50px 10px 50px;
-  background-color: gray;
+  background-color: rgba(150, 150, 150, 0.5);
   width: 30%;
   text-align: center;
   margin: 0 auto;
   display: none;
   margin-top: 10%;
+  border-radius: 5px;
+  border: 2px solid rgba(50, 50, 50, 0.6);
 }
 
 #mainMenu h1 {
@@ -63,20 +97,9 @@ body {
   color: white;
 }
 
-.warningTab {
-  padding: 10px 50px 10px 50px;
-  background-color: gray;
-  width: 30%;
-  text-align: center;
-  margin: 0 auto;
-  color: white;
-  display: none;
-  margin-top: 10%;
-}
-
 button.closeTab {
   background-color: rgba(50, 50, 50, 0.5);
-  border: 2px solid gray;
+  border: 2px solid rgba(50, 50, 50, 0.6);
   font-weight: bold;
   width: 30px;
   height: 25px;
@@ -113,6 +136,7 @@ button.nextButton {
   float: right;
   margin: -25px 10px 0px 0px;
   display: none;
+  outline: none;
 }
 
 #storyContainer {
@@ -123,6 +147,115 @@ button.nextButton {
 .nextButton:after {
   content: ">";
 }
+
+img.phoneOff {
+  border: 2px solid black;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  width: 250px;
+  display: none;
+}
+
+img.phoneLocked {
+  border: 2px solid black;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  width: 250px;
+  display: none;
+}
+
+img.phoneCallIn {
+  border: 2px solid black;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  width: 250px;
+  display: none;
+}
+
+#callingPhone button.phoneAnswer {
+  position: absolute;
+  right: 153px;
+  bottom: 152px;
+  display: inline;
+  padding: 5px;
+  width: 90px;
+  opacity: 0;
+  display: none;
+}
+
+#callingPhone button.phoneDecline {
+  position: absolute;
+  right: 56px;
+  bottom: 152px;
+  display: inline;
+  padding: 5px;
+  width: 90px;
+  opacity: 0;
+  display: none;
+}
+
+#deadScreen {
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+}
+
+#peekingSkeletonOne, #peekingSkeletonTwo, #peekingSkeletonThree {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 143px;
+  bottom: -30px;
+}
+
+#choiceFour, #choiceFive, #choiceSix, #choiceSeven, #choiceEight, #choiceNine, #choiceTen, #choiceEleven, #choiceTwelve {
+  margin: 20px 0px 0px 0px;
+}
+
+#inventory {
+  width: 500px;
+  height: 85px;
+  background-color: rgba(75, 75, 75, 0.6);
+  display: none;
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  left: 31.5%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+div.inventorySlot {
+  background-color: white;
+  border-radius: 5px;
+  flex: 1;
+  margin: 8px;
+}
+
+#invPistol {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#invVMask {
+  display: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*#playButton:hover ~ #peekingSkeleton {
+display: block;
+}*/
 
 /* Shrink */
 .hvr-shrink {
