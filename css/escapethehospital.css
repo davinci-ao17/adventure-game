@@ -16,11 +16,6 @@ h1 {
     animation: fadein 4s;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
 #audio1 {
 	color: grey;
 	display: inline;
@@ -37,11 +32,6 @@ h1 {
 cursor: pointer;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
 #afbeelding1 {
 	margin-left: 500px;
 	display: none;
@@ -49,11 +39,6 @@ cursor: pointer;
 	width: 960px;
 	position: absolute;
     animation: fadein 4s;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
 }
 
 #foobar { 
@@ -73,11 +58,6 @@ cursor: pointer;
 
 #audio2:hover {
 	cursor: pointer;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
 }
 
 #titles {
@@ -105,11 +85,6 @@ cursor: pointer;
     animation: fadein 4s;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
 #afbeelding3 {
 	display: none;
 	color: grey;
@@ -120,11 +95,6 @@ cursor: pointer;
 	width: 960px;
 	text-decoration: none;
     animation: fadein 4s;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
 }
 
 #afbeelding4 {
@@ -139,11 +109,6 @@ cursor: pointer;
     animation: fadein 4s;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
 #afbeelding5 {
 	display: none;
 	color: grey;
@@ -154,11 +119,6 @@ cursor: pointer;
 	width: 960px;
 	text-decoration: none;
     animation: fadein 4s;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
 }
 
 #afbeelding5d {
@@ -173,11 +133,6 @@ cursor: pointer;
     animation: fadein 4s;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
 #afbeelding6 {
 	display: none;
 	color: grey;
@@ -188,11 +143,6 @@ cursor: pointer;
 	width: 960px;
 	text-decoration: none;
     animation: fadein 4s;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
 }
 
 #afbeelding6d {
@@ -239,6 +189,39 @@ cursor: pointer;
 	text-decoration: none;
 }
 
+#tv {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+}
+
+#laptop {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+}
+
+#bed {
+	display: none;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+}
+
 #ingang1 {
 	display: none;
 	color: grey;
@@ -249,11 +232,6 @@ cursor: pointer;
 	width: 960px;
 	text-decoration: none;
     animation: fadein 4s;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
 }
 
 #voorkant1 {
@@ -269,11 +247,6 @@ cursor: pointer;
     animation: fadein 4s;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
 #deur1 {
 	width: 33px;
 	height: 70px;
@@ -283,11 +256,6 @@ cursor: pointer;
 	z-index: 1;
 	display: none;
     animation: fadein 4s;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
 }
 
 #schuur {
@@ -302,9 +270,41 @@ cursor: pointer;
     animation: fadein 4s;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+#kamer {
+	color: grey;
+	display:none;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+#bathroom {
+	color: grey;
+	display:none;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
+}
+
+
+#keyBox1 {
+	color: grey;
+	display:none;
+	position: absolute;
+	z-index: 1;
+	margin-left: 500px;
+	height: 635px;
+	width: 960px;
+	text-decoration: none;
+    animation: fadein 4s;
 }
 
 #dopper {
@@ -326,11 +326,6 @@ cursor: pointer;
 	position: absolute;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
 #key {
 	display: none;
 	height: 20px;
@@ -342,9 +337,15 @@ cursor: pointer;
     animation: fadein 4s;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+#key3 {
+	display: none;
+	height: 20px;
+	width: 40px;
+	position: absolute;
+	margin-top: 240px;
+	margin-left: 670px;
+	z-index: 1;
+    animation: fadein 4s;
 }
 
 #dubbeleladder1 {
@@ -358,30 +359,59 @@ cursor: pointer;
     animation: fadein 4s;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+#dubbeleladder1:hover {
+	cursor: pointer;
+}
+
+#extensionLadder1 {
+	position: absolute;
+	margin-left: 800px;
+	margin-top: 235px;
+	z-index: 1;
+    height: 400px;
+    width: 400px;
+    display: none;
+    animation: fadein 4s;
+}
+
+#extensionLadder1:hover {
+	cursor: pointer;
 }
 
 #raam1 {
 	position: absolute;
 	margin-left: 545px;
 	margin-top: 215px;
-	z-index: 1;
+	z-index: 2;
 	display: none;
     animation: fadein 4s;
+    color: black
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+#raam1:hover {
+	cursor: pointer;
 }
 
 /*inventory*/
+
 #inventory {
 	background-color: grey;
 	width: 100px;
 	height: 700px;
 	position: absolute;
 	margin-left: 1500px;
+}
+
+li {
+	list-style-type: none;
+}
+
+ul {
+	cursor: pointer;
+}
+
+#strange {
+position: relative;
+margin-top: 700px;
+margin-left: 500px;
 }

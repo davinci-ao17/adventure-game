@@ -47,7 +47,7 @@
 
 	<img src="img/1/5.1.jpg" id="afbeelding5d" alt="afbeelding5d" usemap="#Receptiond">
 	<map name="Receptiond">
-	  	<area shape="poly" coords="395,479,390,564,482,567,464,482" onclick="noD();">
+	  	<area shape="poly" coords="395,479,390,564,482,567,464,482" onclick="noD1();">
 	  	<area shape="poly" coords="0,608,3,635,959,635,959,613" onclick="afbeelding4f();">
 	</map>
 
@@ -77,7 +77,7 @@
 
 	<img src="img/1/6.3.jpg" id="noD" alt="noD" usemap="#ReceptionnoD">
 	<map name="ReceptionnoD">
-		<area shape="poly" coords="395,479,390,564,482,567,464,482" onclick="afbeelding5d();">
+		<area shape="poly" coords="395,479,390,564,482,567,464,482" onclick="afbeelding5df();">
 	  	<area shape="poly" coords="0,608,3,635,959,635,959,613" onclick="afbeelding4f();">
 	</map>
 
@@ -95,20 +95,45 @@
 		<area shape="poly" coords="0,608,3,635,959,635,959,613" onclick="voorkant();">
 	</map>
 
-	
+	<img src="img/1/10.jpg" id="kamer" alt="kamer" usemap="#Kamer">
+	<map name="Kamer">
+		<area shape="poly" coords="189,135,208,112,210,314,191,306" onclick="takeShower();">
+	</map>
+
+	<img src="img/1/11.jpg" id="bathroom" alt="bathroom">
+
+	<img src="img/1/12.jpg" id="keyBox1" alt="keybox">
+
+	<img src="img/1/13.jpg" id="tv" alt="tv">
+
+	<img src="img/1/14.jpg" id="laptop" alt="laptop">
+
+	<img src="img/1/15.jpg" id="bed" alt="bed">
+
 	<img src="img/items/dopper.png" draggable="true" id="dopper" alt="dopper" onclick="dopper1();">
 
 	<img src="img/items/key.png" id="key" alt="key" onclick="pickupKey();">
 
 	<img src="img/items/dubbeleladder.png" alt="dubbeleladder" id="dubbeleladder1" onclick="pickupLadder();">
 
-	<img src="img/1/raam.jpg" alt="raam" id="raam1" onclick="raam1">
+	<img src="img/items/uitschuifladder.png" alt="extensionladder" id="extensionLadder1" onclick="pickupLadderExtension();">
+
+	<img src="img/1/raam.jpg" alt="raam" onclick="raam2();" id="raam1">
 
 	<img src="img/inventory.png" alt="inventory" id="inventory">
+
 	<img src="img/items/key1.png" alt="key1" id="key1">
+
+	<img src="img/items/key3.png" alt="key3" id="key3" onclick="pickupKey3();">
 
 	<h1 id="titles">Home</h1>
 	<p id="desc">The Home screen.</p>
+<audio id="strange" controls>
+  <source src="music/Strangeness.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio><br>
+<button onclick="enableLoop()" type="button">Enable loop</button>
+<button onclick="disableLoop()" type="button">Disable loop</button>	
 
 	<script type="text/javascript" src="js/escapethehospital.js"></script>
   </body>
