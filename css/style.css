@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-image: url("../img/start.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#sectie{
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+}
+
+#intro{
+	color: white;
+	display: none;
+	padding: 10px;
+}
+
+#top {
+	width: 100%; 
+	background-color: blue;
+	text-align: center;
+	display: block;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+}
+
+#title{
+	display: inline;
+	padding: 10px;
+}
+
+#container{
+	background-color: red;
+	display: block;
+	width: 100%
+	border-bottom: 2px solid white;
+}
+
+#options{
+	min-height: 80px;
+    display: inline-block;
+    width: 60%;
+}
+
+#option1, #option2 {
+    padding: 4px 30px;
+    color: white;
+    text-decoration: none;
+    display: none;
+}
+
+#startbutton{
+    position: relative;
+    left: 80%;
+    top: 20px;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    background-color: blue;
+    color: black;
+    border-radius: 5px;
+}
+
+#option1:hover, #option2:hover{
+	color: black;
+}
+
+#opties ul {
+	list-style-type: none;
+}
