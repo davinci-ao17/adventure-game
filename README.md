@@ -1,8 +1,10 @@
+Javascript opdracht 2
+
 # adventure-game
 Je maakt met behulp van Javascript een toffe Adventure Game.
 
 ### Functionele eisen
-Functionele eisen beschrijven welke functionaliteit je eindproduct moet bevatten. 
+Functionele eisen beschrijven welke functionaliteit je eindproduct moet bevatten.
 
 Deze opdracht moet aan de volgende functionele eisen voldoen:
 * het spel heeft tenminste 10 verschillende locaties (elke locatie heeft een titel, een foto, een verhaaltje en meerdere keuzes);
@@ -17,7 +19,7 @@ Deze opdracht moet aan de volgende functionele eisen voldoen:
 Je kunt bij het verzinnen van het verhaal denken aan een "Escape Room" of een spel zoals "Myst".
 
 ### Technische eisen
-Technische eisen beschrijven aan welke vakgerichte voorwaarden de opdracht moet voldoen. 
+Technische eisen beschrijven aan welke vakgerichte voorwaarden de opdracht moet voldoen.
 
 Wie ben ik moet aan de volgende technische eisen voldoen:
 * elke locatie in het spel heeft een eigen functie;
