@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title>Adventure Game</title>
+			<link href="css/style.css" rel="stylesheet">
+			<script src="js/game.js" type="text/javascript" ></script>
+			<!-- <audio controls autoplay style="display:none;">
+		  <source src="img/scary.mp3" type="audio/mpeg">
+			</audio> -->
+		</head>
+	<body>
+	<main id="main">
+		<section id="status"></section>
+		<section id="level_title">Je word wakker in een donkere cel, eerst maar eens op staan.</section>
+			<nav>
+				<button id="button0" class="button0" onclick="javascript:Level1()">Sta op</button>
+				<button id="button1" class="button1" onclick="javascript:Level2()"></button>
+				<button id="button2" class="button2" onclick="javascript:Level2()"></button>
+				<button id="button3" class="button3" onclick="javascript:Level3()"></button>
+			</nav>
+ 		<img id="key" class="key" src="img/key.png">
+		<img id="life" class="life" src="img/lifebar.png">
+		<img id="over" class="over" src="img/gameover.png">
+		<img id="lifehurt" class="lifehurt" src="img/lifebarhurt.png">
+		<img id="glasses" class="glasses" onclick=" document.getElementById('main').style.opacity=1;document.getElementById('glasses').style.display = 'none';" src="img/glasses.png">
+		<img id="level_image" class="level_image" src="img/a.png">
+	</main>
+		<footer>
+	        <p>© Made by Kevin Kraaijveld</p>
+	  </footer>
+	</body>
+</html>
